@@ -1,0 +1,26 @@
+Raytracer.
+
+Paraxiale approximatie.
+Classes:
+-Vector2 (template double/int)
+	-> ray (met getAngle etc)
+-Matrix22 (template double/int)
+	-> interface
+	-> medium
+-- Met overloads voor V = M*V, M = M*M en evt V *= M
+
+Input: 
+-textfile met systeem 
+-textfile met rays
+
+Output: 
+-textfile afstanden tov as.
+
+
+Verlanglijst
+- output tekenen op scherm
+- systeem+rays tekenen in zijaanzicht
+- ray input door klikken
+- coordinate break
+- prisma's
+(toolbox + klikken voor componenten?)

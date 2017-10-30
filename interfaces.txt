@@ -1,0 +1,12 @@
+Ray(double inclination, double position)
+double getInclination()
+double getPosition()
+
+Medium(double length, double n)
+Medium(double length) // n=1
+double getLength()
+double getIndex() {return md_n;}
+
+Systeemfile:
+M length ior
+S 
