@@ -1,0 +1,3 @@
+namen: camelCase (classes met hoofdletter)
+type prefix n_, d_
+member prefix m_
