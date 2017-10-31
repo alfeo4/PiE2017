@@ -8,7 +8,7 @@ void Component::setMatrix(double A, double B, double C, double D)
     m_matrix[3] = D;
 }
 
-Matrix22 Component::getMatrix()
+Matrix22<double> Component::getMatrix()
 {
     return m_matrix;
 }
