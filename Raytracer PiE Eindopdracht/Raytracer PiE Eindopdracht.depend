@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1509446364 source:c:\users\user\documents\pie\eindopdracht\pie2017\raytracer pie eindopdracht\file_input.cpp
+	<fstream>
+	<string>
+	<vector>
+	<iostream>
+
+1509445941 source:c:\users\user\documents\pie\eindopdracht\pie2017\raytracer pie eindopdracht\main.cpp
+	<iostream>
+
