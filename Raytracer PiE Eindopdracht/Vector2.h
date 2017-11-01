@@ -24,7 +24,7 @@ T& Vector2<T>::operator[] (int index)
 {
     if(index < 0 || index > 1) // Boundary check
     {
-        // TODO throw error?
+        std::cerr << "Error: in Vector2, index is out of bounds \n";
     }
     return m_data[index];
 }
@@ -43,7 +43,7 @@ Vector2<T> operator* (Matrix22<T> M, Vector2<T> v)
 template <typename T>
 Vector2<T>& Vector2<T>::operator*= (Matrix22<T> M)
 {
-    Vector2<T> temp = M * (*this);
+    Vector2<T> temp = M * (*this); // "this" is a pointer to the current vector2 object.
     m_data[0] = temp[0];
     m_data[1] = temp[1];
     return *this; // Return reference to this vector for chaining of assignments.

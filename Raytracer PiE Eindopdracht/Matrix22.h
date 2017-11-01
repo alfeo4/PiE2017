@@ -21,7 +21,8 @@ T& Matrix22<T>::operator[] (int index)
 {
     if(index < 0 || index > 3) // Boundary check
     {
-        // TODO throw error?
+        std::cerr << "Error: in Matrix22, index is out of bounds! \n";
+
     }
     return m_data[index];
 }
