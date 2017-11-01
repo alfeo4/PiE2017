@@ -39,6 +39,10 @@
 		<Unit filename="Matrix22.h" />
 		<Unit filename="Medium.cpp" />
 		<Unit filename="Medium.h" />
+		<Unit filename="Ray.cpp" />
+		<Unit filename="Ray.h" />
+		<Unit filename="RayContainer.cpp" />
+		<Unit filename="RayContainer.h" />
 		<Unit filename="Vector2.h" />
 		<Unit filename="fileInput.cpp" />
 		<Unit filename="fileInput.h" />
