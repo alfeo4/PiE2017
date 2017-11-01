@@ -3,6 +3,10 @@
 
 #include "Component.h"
 
+/* A component class that represents refraction at a surface. Both curved and flat surfaces
+*  are allowed. For a flat surface, set curvatureRadius to zero. A positive curvature radius
+*  means a concave surface, i.e. its centre lies to the right of the surface.
+*/
 
 class Surface : public Component
 {
@@ -11,8 +15,8 @@ class Surface : public Component
 
     private:
         double m_radius;
-        double m_index1;
-        double m_index2;
+        double m_index1; // Refractive index of the medium before the surface.
+        double m_index2; // Refractive index of the medium after the surface.
 
         void generateMatrix();
 };
