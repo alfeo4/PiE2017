@@ -39,6 +39,8 @@
 		<Unit filename="Matrix22.h" />
 		<Unit filename="Medium.cpp" />
 		<Unit filename="Medium.h" />
+		<Unit filename="Surface.cpp" />
+		<Unit filename="Surface.h" />
 		<Unit filename="Vector2.h" />
 		<Unit filename="fileInput.cpp" />
 		<Unit filename="fileInput.h" />
