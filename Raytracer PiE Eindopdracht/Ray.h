@@ -5,7 +5,7 @@
 #include "Vector2.h"
 
 // "Ray" is a class to hold rays. Each ray is a vector of two doubles, with the first element being distance and the second element being the inclination angle.
-// Two constructors are offered (default and one which initialises values for distance and inclination), als well as a setter and getter.
+// Two constructors are offered (default and one which initialises values for distance and inclination), as well as a setter and getter.
 
 class Ray
 {
@@ -14,7 +14,7 @@ public:
     Ray(double, double);
 
     void setRay(double, double);
-    Vector2<double> getRay();
+    Vector2<double> getRay(int);
 private:
     Vector2<double> ray;
 
