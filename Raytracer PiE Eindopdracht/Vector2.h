@@ -1,6 +1,7 @@
 #ifndef VECTOR2_H
 #define VECTOR2_H
 
+#include <iostream>
 #include "Matrix22.h"
 
 /* A class that implements a 2-by-1 vector. Elements can be accessed with the [] (subscript)

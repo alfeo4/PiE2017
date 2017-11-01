@@ -1,6 +1,8 @@
 #ifndef MATRIX22_H
 #define MATRIX22_H
 
+#include <iostream>
+
 /* A class that implements a 2-by-2 vector. Elements can be accessed with the [] (subscript)
 *  operator. Elements are stored in row-major order.
 */
