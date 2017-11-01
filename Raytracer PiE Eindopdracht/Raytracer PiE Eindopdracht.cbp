@@ -32,9 +32,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="DataContainer.cpp" />
+		<Unit filename="DataContainer.h" />
 		<Unit filename="Matrix22.h" />
 		<Unit filename="Vector2.h" />
+		<Unit filename="fileInput.cpp" />
+		<Unit filename="fileInput.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="parseInput.cpp" />
+		<Unit filename="parseInput.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
