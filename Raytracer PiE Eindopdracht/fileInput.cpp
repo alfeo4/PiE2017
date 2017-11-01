@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include "fileInput.h"
 
 
 
@@ -20,11 +21,11 @@ std::vector<std::string> openFile(std::string nameOfFile)
     vector<string> input;
 
     ifstream ins (file);
-    if (ins.is_open())
+    if (ins.is_open()) // Check if the file is opened correctly
     {
-        while (getline(ins, line))
+        while (getline(ins, line)) // Read lines until there are no more lines
         {
-            input.push_back(line);
+            input.push_back(line); // Push each line into a string vector
         }
     }
     else
