@@ -65,8 +65,8 @@ std::vector<SystemContainer> parseSystem(std::vector<string> input)
 
         systemContainer.push_back(data);
         // Every system should start and end with a medium. No two media can follow one another, and nor can two surfaces. The following if-statements check whether this is the case.
-        if ((data.gettype() == "Surface" ) && (b = 0)) {std::cerr << "Error: unexpected type (surface/medium) in parseSystem \n";}
-        if ((data.gettype() == "Medium" ) && (b = 1)) {std::cerr << "Error: unexpected type (surface/medium) parseSystem \n";}
+        if ((data.getType() == "Surface" ) && (b = 0)) {std::cerr << "Error: unexpected type (surface/medium) in parseSystem \n";}
+        if ((data.getType() == "Medium" ) && (b = 1)) {std::cerr << "Error: unexpected type (surface/medium) parseSystem \n";}
         b = !b;
 
 
