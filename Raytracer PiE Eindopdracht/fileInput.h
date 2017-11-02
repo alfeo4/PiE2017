@@ -1,6 +1,6 @@
 
-#ifndef FILEINPUT.H
-#define FILEINPUT.H
+#ifndef FILEINPUT_H
+#define FILEINPUT_H
 
 std::vector<std::string> openFile(std::string nameOfFile);
 

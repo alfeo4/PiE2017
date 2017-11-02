@@ -1,17 +1,17 @@
-#ifndef DATACONTAINER_H
-#define DATACONTAINER_H
+#ifndef SYSTEMCONTAINER_H
+#define SYSTEMCONTAINER_H
 
 #include<string>
 #include <sstream>
 
 
-// Class Datacontainer is designed to hold the data from the system input file in a more usable format.
+// Class SystemContainer is designed to hold the data from the system input file in a more usable format.
 //  Data is extracted from a file by function fileInput and placed in a string vector.
-//  Function parseInput extracts the data from the string vector and places it in the DataContainer.
+//  Function parseSystem extracts the data from the string vector and places it in the SystemContainer.
 
 
 using namespace std;
-class DataContainer
+class SystemContainer
 {
 private:
 
@@ -32,4 +32,4 @@ public:
 
 
 
-#endif // DATACONTAINER_H
+#endif // SystemContainer_H
