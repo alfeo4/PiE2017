@@ -1,0 +1,5 @@
+Medium 1 0 1
+Surface 1 5 0
+Medium 1 999 1.5
+Surface 0 0 0
+Medium 1 0 1
