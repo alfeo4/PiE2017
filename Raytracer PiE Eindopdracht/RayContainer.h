@@ -1,21 +1,30 @@
 #ifndef RAYCONTAINER_H
 #define RAYCONTAINER_H
 
+#include "Vector2.h"
 
-// RayContainer is a class containing a vector of rays. Rays can be added one by one. A RayContainer is returned.
+
+
+// RayContainer is a class containing rays. Rays can be added one by one. A RayContainer is returned.
 
 class RayContainer
 {
 public:
 
-    Raycontainer();
+    double getDistance() {return distance; }
+    double getInclination() {return inclination; }
+    void setDistance(double d) {distance = d; }
+    void setInclination(double i) {inclination = i; }
+    Vector2<double> getRay();
 
-    vector<Ray> getRayContainer(){return rayContainer;}
-    void addRay(Ray ray) {raycontainer.push_back(Ray ray);}
+
 
 
 private:
-    vector<Ray> rayContainer;
+    double distance, inclination;
+    Vector2<double> ray;
+
+
 
 };
 

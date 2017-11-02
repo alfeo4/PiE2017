@@ -34,21 +34,20 @@
 		</Compiler>
 		<Unit filename="Component.cpp" />
 		<Unit filename="Component.h" />
-		<Unit filename="DataContainer.cpp" />
-		<Unit filename="DataContainer.h" />
 		<Unit filename="Matrix22.h" />
 		<Unit filename="Medium.cpp" />
 		<Unit filename="Medium.h" />
-		<Unit filename="Ray.cpp" />
-		<Unit filename="Ray.h" />
+		<Unit filename="ParseRay.cpp" />
+		<Unit filename="ParseRay.h" />
 		<Unit filename="RayContainer.cpp" />
 		<Unit filename="RayContainer.h" />
+		<Unit filename="SystemContainer.h" />
 		<Unit filename="Vector2.h" />
 		<Unit filename="fileInput.cpp" />
 		<Unit filename="fileInput.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="parseInput.cpp" />
-		<Unit filename="parseInput.h" />
+		<Unit filename="parseSystem.cpp" />
+		<Unit filename="parseSystem.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
