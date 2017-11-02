@@ -55,6 +55,8 @@
 		<Unit filename="parseSystem.h" />
 		<Unit filename="populateSystem.cpp" />
 		<Unit filename="populateSystem.h" />
+		<Unit filename="writeRays.cpp" />
+		<Unit filename="writeRays.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
