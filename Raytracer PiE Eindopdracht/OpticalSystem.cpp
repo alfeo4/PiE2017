@@ -4,15 +4,12 @@
 
 OpticalSystem::OpticalSystem()
 {
-    //ctor
+    // nothing
 }
 
 OpticalSystem::~OpticalSystem()
 {
-    for (Component* c : m_components)
-    {
-        delete c;
-    }
+    empty();
 }
 
 Matrix22<double> OpticalSystem::getMatrix()
@@ -28,6 +25,7 @@ void OpticalSystem::addComponent(Component* component)
 
 void OpticalSystem::updateMatrix()
 {
+    // Unity matrix as start.
     m_transferMatrix[0] = 1;
     m_transferMatrix[1] = 0;
     m_transferMatrix[2] = 0;
@@ -37,4 +35,13 @@ void OpticalSystem::updateMatrix()
     {
         m_transferMatrix = c->getMatrix() * m_transferMatrix;
     }
+}
+
+void OpticalSystem::empty()
+{
+    for (Component* c : m_components)
+    {
+        delete c;
+    }
+    updateMatrix();
 }
