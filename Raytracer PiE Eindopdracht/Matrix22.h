@@ -11,11 +11,22 @@ template <typename T>
 class Matrix22
 {
 public:
+    Matrix22(); // Default constructor: unity matrix;
     T& operator[] (int index); // Overloaded subscript operator
 
 protected:
     T m_data[4];
 };
+
+template <typename T>
+Matrix22<T>::Matrix22()
+{
+    m_data[0] = 1;
+    m_data[1] = 0;
+    m_data[2] = 0;
+    m_data[3] = 1;
+}
+
 
 // Return a reference to a selected element (by index)
 template <typename T>
@@ -30,6 +41,8 @@ T& Matrix22<T>::operator[] (int index)
 }
 
 // Multiply two 2-by-2 matrices
+// WARNING: Not suitable for chaining!! Operator* acts from left to right, where matrix
+// multiplication should be done from right to left.
 template <typename T>
 Matrix22<T> operator* (Matrix22<T> A, Matrix22<T> B)
 {

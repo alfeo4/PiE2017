@@ -12,12 +12,20 @@ template <typename T>
 class Vector2
 {
 public:
+    Vector2(); // Default constructor: zero vector
     T& operator[] (int index); // Overloaded subscript operator
     Vector2<T>& operator*= (Matrix22<T> M); // Multiply this vector by a matrix
 
 protected:
     T m_data[2];
 };
+
+template <typename T>
+Vector2<T>::Vector2()
+{
+    m_data[0] = 0;
+    m_data[1] = 0;
+}
 
 // Return a reference to a selected element (by index)
 template <typename T>
