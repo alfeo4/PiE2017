@@ -20,6 +20,8 @@ std::vector<SystemContainer> parseSystem(std::vector<string> input)
     double val1, val2, val3;
     vector<SystemContainer> systemContainer;
 
+    bool b = 0; // Used when checking whether the order of types is proper.
+
     for (int i = 0; i < input.size(); i++)
     {
         // Here, a SystemContainer is instantiated and filled with data.
@@ -29,13 +31,48 @@ std::vector<SystemContainer> parseSystem(std::vector<string> input)
         ss << input[i];
         ss >> type >> val1 >> val2 >> val3;
 
-        data.setType(type);
-        data.setDistance(val1);
-        data.setRadius(val2);
-        data.setRefractionIndex(val3);
+        // Check what type is offered.
+        // Media only need a type and a distance, so the others are set to 0.
+        // Surface needs a type, a radius and an index, so distance is set to 0.
+
+        if (type == "Medium")
+        {
+            data.setType(type);
+            data.setDistance(val1);
+            data.setRadius(0);
+            data.setRefractionIndex(0);
+
+        }
+
+        else if (type == "Surface")
+        {
+            data.setType(type);
+            data.setDistance(0);
+            data.setRadius(val2);
+            data.setRefractionIndex(val3);
+
+        }
+
+        // In case a nonexistent type is specified, an error is thrown.
+
+        else
+        {
+            std::cerr << "Error in SystemContainer: type not recognised. \n";
+        }
+
+
+        // Every system should start and end with a medium. No two media can follow one another, and nor can two surfaces. The following if-statements check whether this is the case.
+        if ((data.getType() == "Surface" ) && (b == 0)) {std::cerr << "Error: unexpected type (surface/medium) in parseSystem \n" ;}
+        if ((data.getType() == "Medium" ) && (b == 1)) {std::cerr << "Error: unexpected type (surface/medium) parseSystem \n" ;}
+        b = !b;
+
+
         systemContainer.push_back(data);
 
     }
+
+
+
     return systemContainer;
 
 }
