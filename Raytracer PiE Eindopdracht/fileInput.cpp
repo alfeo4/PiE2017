@@ -25,13 +25,10 @@ std::vector<std::string> openFile(std::string nameOfFile)
     {
         while (getline(ins, line)) // Read lines until there are no more lines
         {
-
-            if (line[0] != '#')
-            input.push_back(line); // Push each line into a string vector
+            if (line[0] != '#') // Ignore lines starting with '#' (comments)
+                input.push_back(line); // Push each line into a string vector
         }
     }
-
-    else if (line[0] == '#');
 
     else
     {
