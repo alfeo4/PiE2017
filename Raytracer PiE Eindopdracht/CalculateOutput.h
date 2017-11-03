@@ -10,7 +10,7 @@
 
 
 
-vector<RayContainer> calculateOutput(vector<RayContainer>, OpticalSystem);
+vector<RayContainer> calculateOutput(vector<RayContainer>&, OpticalSystem&);
 
 
 #endif // CALCULATEOUTPUT_H

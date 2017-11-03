@@ -6,7 +6,7 @@
 #include "CalculateOutput.h"
 
 
-vector<RayContainer> calculateOutput(vector<RayContainer> inputRays, OpticalSystem system)
+vector<RayContainer> calculateOutput(vector<RayContainer> &inputRays, OpticalSystem &system)
 {
     vector<RayContainer> outputRays;
     for (int i = 0; i < inputRays.size(); i++)
