@@ -16,7 +16,8 @@ public:
     void setDistance(double d) {distance = d; }
     void setInclination(double i) {inclination = i; }
     Vector2<double> getRay();
-
+    void setRay(double, double);
+    void setRay(Vector2<double>);
 
 
 
