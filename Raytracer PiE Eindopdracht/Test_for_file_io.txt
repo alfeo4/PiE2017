@@ -1,2 +1,10 @@
-Mirror 20 1 99999999
-Lens 15 2 3
+
+Medium 20 
+Surface 30 2
+Medium 40 
+Surface 50 2 
+Medium 60 
+Surface 70 2 
+Medium 80 
+
+
