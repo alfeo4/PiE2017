@@ -9,32 +9,51 @@
 
 #include "fileInput.h"
 #include "parseSystem.h"
+#include "ParseRay.h"
 #include "populateSystem.h"
-#include "parseRay.h"
+
 #include "CalculateOutput.h"
+#include "writeRays.h"
+#include "expandLenses.h"
 
 using namespace std;
 
 int main()
 {
-    string filepath = "components.txt";
-    vector<string> test0 = openFile(filepath);
-    vector<SystemContainer> test1 = parseSystem(test0);
-    OpticalSystem test2;
-    populateSystem(test2, test1);
+    cout << "Use advanced mode? (y/n)";
+    char answer;
+    cin >> answer;
 
+    if (answer == 'n')
+    {
+        expandLenses("lenses.txt","components.txt");
+        cout << "Built components.txt from lenses.txt" << endl;
+    }
+    else{
+        cout << "Using components.txt" << endl;
+    }
 
-    string filepath2 = "inrays.txt";
-    vector<string> test99 = openFile(filepath2);
-    vector<RayContainer> test98 = parseRay(test99);
+    Vector2<double> vec;
+    vec[0] = 1;
+    vec[1] = -.1;
 
-    // calculateOutput(test98, test2);
+    vector<SystemContainer> components = parseSystem(openFile("components.txt"));
 
-     vector<RayContainer> output = calculateOutput(test98, test2);
-     cout << output[0].getDistance() << endl;
+    OpticalSystem system;
+    populateSystem(system, components);
 
+    vec *= system.getMatrix();
 
-    cout << "test" << endl;
+    cout << vec[0] << endl;
+    cout << vec[1] << endl;
+
+    vector<string> rayList = openFile("inrays.txt");
+    vector<RayContainer> rays = parseRay(rayList);
+
+    vector<RayContainer> outrays = calculateOutput(rays, system);
+
+    writeRays(outrays, "outrays.txt");
+
     return 0;
 }
 
