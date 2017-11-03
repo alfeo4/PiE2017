@@ -48,6 +48,8 @@
 		<Unit filename="Surface.h" />
 		<Unit filename="SystemContainer.h" />
 		<Unit filename="Vector2.h" />
+		<Unit filename="expandLenses.cpp" />
+		<Unit filename="expandLenses.h" />
 		<Unit filename="fileInput.cpp" />
 		<Unit filename="fileInput.h" />
 		<Unit filename="main.cpp" />

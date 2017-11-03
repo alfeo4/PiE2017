@@ -1,15 +1,5 @@
-# Lines starting with '#' are comments.
-# This file contains the data on the optical system.
-# Currently 2 types of component are allowed. A Medium (length, refractive index)
-# and a refractive Surface (radius of curvature, 0 if flat).
-# Example system:
-# Medium 1 1
-# Surface 0
-# Medium 1 1.5
-#
-# 
 Medium 1 1
-Surface 0
-Medium 1 1.5
-Surface 0
+Surface 0.5
+Medium 0 1.5
+Surface -0.5
 Medium 1 1
