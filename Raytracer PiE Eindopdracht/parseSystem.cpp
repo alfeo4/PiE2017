@@ -17,7 +17,7 @@ std::vector<SystemContainer> parseSystem(std::vector<string> input)
     // These need to be extracted. and will be placed in the SystemContainer, using the function parseSystem.
     // NOTE: radius of curvature applies only to lenses and curved mirrors. For other types, a value of 99999999 will be used to show an infinite radius of curvature, which represents a flat surface.
     string type;
-    double val1, val2, val3;
+    double val1, val2;
     vector<SystemContainer> systemContainer;
 
     bool b = 0; // Used when checking whether the order of types is proper.
@@ -29,7 +29,7 @@ std::vector<SystemContainer> parseSystem(std::vector<string> input)
         SystemContainer data;
         stringstream ss;
         ss << input[i];
-        ss >> type >> val1 >> val2 >> val3;
+        ss >> type >> val1 >> val2;
 
         // Check what type is offered.
         // Media only need a type and a distance, so the others are set to 0.
@@ -40,7 +40,7 @@ std::vector<SystemContainer> parseSystem(std::vector<string> input)
             data.setType(type);
             data.setDistance(val1);
             data.setRadius(0);
-            data.setRefractionIndex(0);
+            data.setRefractionIndex(val2);
 
         }
 
@@ -48,8 +48,8 @@ std::vector<SystemContainer> parseSystem(std::vector<string> input)
         {
             data.setType(type);
             data.setDistance(0);
-            data.setRadius(val2);
-            data.setRefractionIndex(val3);
+            data.setRadius(val1);
+            data.setRefractionIndex(0);
 
         }
 
