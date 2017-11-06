@@ -1,0 +1,17 @@
+# This is an example inrays file.
+# Lines starting with # are comments.
+#
+# Here input rays for the system can be defined
+# by entering a distance from the optical axis
+# and its inclination tan(angle)
+#
+# To use this file, save it as 'inrays.txt'
+# and edit it to your liking.
+#
+# Example input (point source at the optical axis):
+#
+0 0.4
+0 0.2
+0 0
+0 -0.2
+0 -0.4

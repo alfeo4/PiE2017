@@ -1,0 +1,18 @@
+# This is an example lenses file.
+# Lines starting with '#' are comments.
+#
+# This file is used to define a simple optical system. 
+# Allowed entries are Medium (length, refractive index) and
+# Lens (focal length in air, refractive index). 
+#
+# Lens entries in this file will automatically be converted to a 
+# symmetrical lens, with the given refractive index. If different
+# lens types are desired, edit the generated components file directly.
+# To use this file, save it as 'lenses.txt' 
+# and edit it to your liking.
+#
+# Example system:
+#
+Medium 1 1
+Lens 0.5 1.5
+Medium 1 1

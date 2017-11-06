@@ -26,6 +26,8 @@ void expandLenses(string lensfile, string componentfile)
         cerr << "Could not open file" << endl;
     }
 
+    outfile << "# Auto-generated components file" << endl;
+
     for(const string& line : lensList)
     {
         // Put line in stringstream for easy extraction of data
