@@ -1,15 +1,16 @@
+# This is an example components file.
 # Lines starting with '#' are comments.
+#
 # This file contains the data on the optical system.
 # Currently 2 types of component are allowed. A Medium (length, refractive index)
 # and a refractive Surface (radius of curvature, 0 if flat).
-# Example system:
-# Medium 1 1
-# Surface 0
-# Medium 1 1.5
 #
-# 
+# A components file will be generated from a lenses file or it can be used
+# directly (this is called advanced mode). To use it, save this file as 
+# 'components.txt' and edit it to your liking.
+#
+# Example system:
+#
 Medium 1 1
 Surface 0
 Medium 1 1.5
-Surface 0
-Medium 1 1
