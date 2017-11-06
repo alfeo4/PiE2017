@@ -20,38 +20,34 @@ using namespace std;
 
 int main()
 {
+    // Use components file directly or create it from lenses
     cout << "Use advanced mode? (y/n)";
     char answer;
     cin >> answer;
 
-    if (answer == 'n')
+    if (answer == 'y')
     {
+        cout << "Using components.txt" << endl;
+    }
+    else{
         expandLenses("lenses.txt","components.txt");
         cout << "Built components.txt from lenses.txt" << endl;
     }
-    else{
-        cout << "Using components.txt" << endl;
-    }
 
-    Vector2<double> vec;
-    vec[0] = 1;
-    vec[1] = -.1;
-
+    // Load the optical system
     vector<SystemContainer> components = parseSystem(openFile("components.txt"));
 
     OpticalSystem system;
     populateSystem(system, components);
 
-    vec *= system.getMatrix();
-
-    cout << vec[0] << endl;
-    cout << vec[1] << endl;
-
+    // Load rays
     vector<string> rayList = openFile("inrays.txt");
     vector<RayContainer> rays = parseRay(rayList);
 
+    // Simulate
     vector<RayContainer> outrays = calculateOutput(rays, system);
 
+    // Write output
     writeRays(outrays, "outrays.txt");
 
     return 0;

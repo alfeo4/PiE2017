@@ -16,7 +16,8 @@ void expandLenses(string lensfile, string componentfile)
 
     if(!outfile.is_open())
     {
-        cerr << "Could not open file" << endl;
+        cerr << "Could not open file " << componentfile << endl;
+        return;
     }
 
     for(const string& line : lensList)

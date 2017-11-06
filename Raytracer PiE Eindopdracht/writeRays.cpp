@@ -24,6 +24,7 @@ void writeRays(const std::vector<RayContainer>& rays, const std::string fileName
         outFile << ray.getDistance() << " " << ray.getInclination() << '\n';
     }
 
+    std::cout << "Output written to " << fileName << std::endl;
     outFile.close();
 
 }
