@@ -43,5 +43,6 @@ void OpticalSystem::empty()
     {
         delete c;
     }
+    m_components.clear();
     updateMatrix();
 }
