@@ -8,6 +8,13 @@
 
 using namespace std;
 
+/* Expand a file containing lenses to a file containing surfaces and media.
+*  This allows for easy definition of an optical system by specifying focal lengths
+*  and let the software handle converting those to surfaces and media.
+*  For the conversion, a thin, symmetrical lens is assumed. If different lens types are
+*  required, the components file should be used directly.
+*/
+
 void expandLenses(string lensfile, string componentfile)
 {
     vector<string> lensList = openFile(lensfile.c_str()); // Load lenslist into a vector of strings
