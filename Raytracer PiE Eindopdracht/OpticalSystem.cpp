@@ -39,6 +39,7 @@ void OpticalSystem::updateMatrix()
 
 void OpticalSystem::empty()
 {
+    // Free all memory occupied by the components.
     for (Component* c : m_components)
     {
         delete c;

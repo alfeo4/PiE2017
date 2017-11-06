@@ -7,7 +7,8 @@
 class Component;
 
 /* OpticalSystem class that contains pointers to Components, so that the total transmission
-*  matrix of the system can be calculated.
+*  matrix of the system can be calculated. Be sure to only add pointers to newly constructed
+*  objects to this system, as they can be deleted by this class.
 */
 
 class OpticalSystem
@@ -24,7 +25,7 @@ class OpticalSystem
 
     private:
         std::vector<Component*> m_components; // The list of components
-        Matrix22<double> m_transferMatrix;
+        Matrix22<double> m_transferMatrix; // Transer matrix of the entire system.
 
         void updateMatrix();
 };
