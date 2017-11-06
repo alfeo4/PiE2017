@@ -5,24 +5,24 @@
 
 
 
-// RayContainer is a class containing rays. Rays can be added one by one. A RayContainer is returned.
+// RayContainer is a class containing a single ray, with a distance from the
+// optical axis, and an inclination tan(angle)
 
 class RayContainer
 {
 public:
 
-    double getDistance() {return distance; }
-    double getInclination() {return inclination; }
-    void setDistance(double d) {distance = d; }
-    void setInclination(double i) {inclination = i; }
-    Vector2<double> getRay();
+    double getDistance() {return ray[0]; }
+    double getInclination() {return ray[1]; }
+    void setDistance(double d) {ray[0] = d; }
+    void setInclination(double i) {ray[1] = i; }
+    Vector2<double> getRay() {return ray; }
     void setRay(double, double);
     void setRay(Vector2<double>);
 
 
 
 private:
-    double distance, inclination;
     Vector2<double> ray;
 
 
