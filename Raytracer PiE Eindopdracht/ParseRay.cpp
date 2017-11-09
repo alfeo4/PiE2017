@@ -9,7 +9,7 @@ std::vector<RayContainer> parseRay(std::vector<std::string> input)
     double val1, val2;
     std::vector<RayContainer> rayContainer;
 
-    for (int i = 0; i < input.size(); i++)
+    for (unsigned int i = 0; i < input.size(); i++)
     {
         RayContainer ray;
         std::stringstream ss;

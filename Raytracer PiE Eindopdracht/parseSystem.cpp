@@ -22,7 +22,7 @@ std::vector<SystemContainer> parseSystem(std::vector<string> input)
 
     bool b = 0; // Used when checking whether the order of types is proper.
 
-    for (int i = 0; i < input.size(); i++)
+    for (unsigned int i = 0; i < input.size(); i++)
     {
         // Here, a SystemContainer is instantiated and filled with data.
         // A stringstream is used to extract from each string the type and the three double values.

@@ -9,7 +9,7 @@
 vector<RayContainer> calculateOutput(vector<RayContainer> &inputRays, OpticalSystem &system)
 {
     vector<RayContainer> outputRays;
-    for (int i = 0; i < inputRays.size(); i++)
+    for (unsigned int i = 0; i < inputRays.size(); i++)
     {
         Vector2<double> ray;
         RayContainer container;
