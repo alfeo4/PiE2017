@@ -16,6 +16,9 @@
 #include "writeRays.h"
 #include "expandLenses.h"
 
+#include "Trace.h"
+#include "WriteDistances.h"
+
 using namespace std;
 
 int main()
@@ -46,6 +49,9 @@ int main()
 
     // Simulate
     vector<RayContainer> outrays = calculateOutput(rays, system);
+    vector<vector<double>> tracetest = trace(rays, system);
+
+    writeDistances(tracetest, "distancetest01.txt");
 
     // Write output
     writeRays(outrays, "outrays.txt");
