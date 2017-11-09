@@ -21,5 +21,6 @@ void writeDistances(const std::vector<std::vector<double>>& distances, const std
         }
         outFile << std::endl;
     }
+    outFile.close();
 
 }
