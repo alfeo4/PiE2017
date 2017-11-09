@@ -23,6 +23,11 @@ void OpticalSystem::addComponent(Component* component)
     updateMatrix();
 }
 
+std::vector<Component*> OpticalSystem::getComponents()
+{
+    return m_components;
+}
+
 void OpticalSystem::updateMatrix()
 {
     // Unity matrix as start.
@@ -47,3 +52,5 @@ void OpticalSystem::empty()
     m_components.clear();
     updateMatrix();
 }
+
+

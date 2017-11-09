@@ -49,7 +49,11 @@
 		<Unit filename="Surface.cpp" />
 		<Unit filename="Surface.h" />
 		<Unit filename="SystemContainer.h" />
+		<Unit filename="Trace.cpp" />
+		<Unit filename="Trace.h" />
 		<Unit filename="Vector2.h" />
+		<Unit filename="WriteDistances.cpp" />
+		<Unit filename="WriteDistances.h" />
 		<Unit filename="expandLenses.cpp" />
 		<Unit filename="expandLenses.h" />
 		<Unit filename="fileInput.cpp" />

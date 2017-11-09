@@ -23,6 +23,8 @@ class OpticalSystem
         void addComponent(Component* component);
         void empty();   // Clear the system
 
+        std::vector<Component*> getComponents();
+
     private:
         std::vector<Component*> m_components; // The list of components
         Matrix22<double> m_transferMatrix; // Transer matrix of the entire system.

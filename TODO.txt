@@ -18,9 +18,9 @@ Output:
 
 
 Verlanglijst
-- output tekenen op scherm
-- systeem+rays tekenen in zijaanzicht
-- ray input door klikken
-- coordinate break
-- prisma's
+- output tekenen op scherm (te moeilijk)
+- systeem+rays tekenen in zijaanzicht (blijft leuk)
+- ray input door klikken (niet heel belangrijk)
+- coordinate break (niet erg interessant)
+- prisma's (niet)
 (toolbox + klikken voor componenten?)
