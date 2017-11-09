@@ -4,7 +4,7 @@
 #include <sstream>
 #include <iostream>
 
-#include "fileInput.h"
+#include "openFile.h"
 
 using namespace std;
 

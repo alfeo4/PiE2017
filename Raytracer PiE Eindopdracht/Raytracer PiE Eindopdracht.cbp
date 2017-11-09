@@ -33,8 +33,6 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="CalculateOutput.cpp" />
-		<Unit filename="CalculateOutput.h" />
 		<Unit filename="Component.cpp" />
 		<Unit filename="Component.h" />
 		<Unit filename="Matrix22.h" />
@@ -42,8 +40,6 @@
 		<Unit filename="Medium.h" />
 		<Unit filename="OpticalSystem.cpp" />
 		<Unit filename="OpticalSystem.h" />
-		<Unit filename="ParseRay.cpp" />
-		<Unit filename="ParseRay.h" />
 		<Unit filename="RayContainer.cpp" />
 		<Unit filename="RayContainer.h" />
 		<Unit filename="Surface.cpp" />
@@ -52,17 +48,21 @@
 		<Unit filename="Trace.cpp" />
 		<Unit filename="Trace.h" />
 		<Unit filename="Vector2.h" />
-		<Unit filename="WriteDistances.cpp" />
-		<Unit filename="WriteDistances.h" />
+		<Unit filename="calculateOutput.cpp" />
+		<Unit filename="calculateOutput.h" />
 		<Unit filename="expandLenses.cpp" />
 		<Unit filename="expandLenses.h" />
-		<Unit filename="fileInput.cpp" />
-		<Unit filename="fileInput.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="openFile.cpp" />
+		<Unit filename="openFile.h" />
+		<Unit filename="parseRay.cpp" />
+		<Unit filename="parseRay.h" />
 		<Unit filename="parseSystem.cpp" />
 		<Unit filename="parseSystem.h" />
 		<Unit filename="populateSystem.cpp" />
 		<Unit filename="populateSystem.h" />
+		<Unit filename="writeDistances.cpp" />
+		<Unit filename="writeDistances.h" />
 		<Unit filename="writeRays.cpp" />
 		<Unit filename="writeRays.h" />
 		<Extensions>
