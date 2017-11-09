@@ -7,17 +7,17 @@
 #include "OpticalSystem.h"
 #include "RayContainer.h"
 
-#include "fileInput.h"
+#include "openFile.h"
 #include "parseSystem.h"
-#include "ParseRay.h"
+#include "parseRay.h"
 #include "populateSystem.h"
 
-#include "CalculateOutput.h"
+#include "calculateOutput.h"
 #include "writeRays.h"
 #include "expandLenses.h"
 
-#include "Trace.h"
-#include "WriteDistances.h"
+#include "trace.h"
+#include "writeDistances.h"
 
 using namespace std;
 
