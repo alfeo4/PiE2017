@@ -1,6 +1,8 @@
 clear variables
 
-% Draw an opticalSystem from a components and outrays file
+% Draw an opticalSystem from a components and raypaths file
+% This script visualises the results of the RayTracer program
+% by plotting the calculated paths
 
 [fid,message] = fopen('components.txt','r');
 if (fid == -1)
@@ -18,7 +20,7 @@ refractiveIndex = systemdata{2};
 xPositions = cumsum([0 thickness']);
 
 % Load ray data
-raydata = importdata('outrays.txt', ' ', 0); % delimiter space, 0 header lines
+raydata = importdata('raypaths.txt', ' ', 0); % delimiter space, 0 header lines
 plot(xPositions, raydata)
 
 % Find the maximum distance from the optical axis for *any* ray.

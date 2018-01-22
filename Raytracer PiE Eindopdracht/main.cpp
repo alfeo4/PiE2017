@@ -51,7 +51,7 @@ int main()
     vector<RayContainer> outrays = calculateOutput(rays, system);
     vector<vector<double>> tracetest = trace(rays, system);
 
-    writeDistances(tracetest, "distancetest01.txt");
+    writeDistances(tracetest, "raypaths.txt");
 
     // Write output
     writeRays(outrays, "outrays.txt");
