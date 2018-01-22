@@ -21,6 +21,13 @@
 
 using namespace std;
 
+/* The Raytracer program reads rays from an inrays.txt file and traces them through a
+*  system as defined by lenses.txt or components.txt (in advanced mode).
+*  The output is written as outrays.txt for the beam positions and angles after passing
+*  through the system, and raypaths.txt for the full path. This last file is used by
+*  drawsystem.m for visualisation (requires MATLAB).
+*/
+
 int main()
 {
     // Use components file directly or create it from lenses
